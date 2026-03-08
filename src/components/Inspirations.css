@@ -1,0 +1,90 @@
+.inspirations-section {
+    padding: 8rem 0;
+    background-color: var(--bg-layer);
+    position: relative;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.inspirations-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.inspirations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 0 5%;
+}
+
+.inspiration-card {
+    background-color: var(--bg-darker);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspiration-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-red);
+}
+
+.inspiration-image-wrapper {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.inspiration-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%) contrast(1.2);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.inspiration-card:hover .inspiration-image {
+    filter: grayscale(0%) contrast(1.1);
+    transform: scale(1.05);
+}
+
+.inspiration-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 1.5rem 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.inspiration-title {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.inspiration-content {
+    padding: 2rem 1.5rem;
+    flex-grow: 1;
+}
+
+.inspiration-name {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.inspiration-desc {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 1rem;
+}

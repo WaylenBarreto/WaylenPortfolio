@@ -1,0 +1,127 @@
+.projects-section {
+    padding: 8rem 0;
+    background-color: var(--bg-dark);
+    position: relative;
+}
+
+.projects-header {
+    margin-bottom: 4rem;
+    padding: 0 5%;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 5%;
+}
+
+.project-card {
+    position: relative;
+    background: var(--bg-layer);
+    border-left: 2px solid var(--border-subtle);
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    border-right: 1px solid var(--border-subtle);
+    padding: 3rem;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0%;
+    background-color: var(--accent-red);
+    transition: height 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateX(10px) scale(1.01);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-card:hover::before {
+    height: 100%;
+}
+
+.project-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.project-number {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-muted);
+    opacity: 0.3;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-red);
+}
+
+.project-title {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.project-subtitle {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--accent-red);
+    margin-bottom: 1.5rem;
+}
+
+.project-desc {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tech-badge {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2rem;
+    }
+}

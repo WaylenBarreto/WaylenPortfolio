@@ -1,0 +1,164 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--bg-darker);
+    /* Optional: Background pattern representing racing or tech */
+    background-image: radial-gradient(circle at 80% 50%, rgba(213, 26, 26, 0.1) 0%, transparent 60%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23ffffff' fill-opacity='0.02' fill-rule='evenodd'/%3E") center top;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    padding: 0 5%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-primary);
+    color: var(--text-muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.hero-eyebrow .line {
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-red);
+}
+
+.hero-title {
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 0.9;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.text-light {
+    font-weight: 300;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-main);
+    opacity: 0.8;
+}
+
+.text-bold {
+    font-weight: 900;
+    color: var(--text-main);
+}
+
+.text-bold::after {
+    content: '.';
+    color: var(--accent-red);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    max-width: 80%;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.btn-icon {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+.hero-large-image-wrapper {
+    position: relative;
+    width: 600px;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.hero-large-profile {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom right;
+    z-index: 5;
+    filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.8));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.racing-stripe {
+    position: absolute;
+    top: -20%;
+    height: 150%;
+    transform: rotate(20deg);
+    z-index: 1;
+}
+
+.racing-stripe.primary {
+    right: 30%;
+    width: 150px;
+    background-color: var(--accent-red);
+    opacity: 0.3;
+}
+
+.racing-stripe.secondary {
+    right: 60%;
+    width: 50px;
+    background-color: var(--accent-blue);
+    opacity: 0.4;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-large-image-wrapper {
+        display: none;
+        /* Hide large image on smaller screens to emphasize text */
+    }
+
+    .hero-container {
+        padding: 0 2rem;
+    }
+}
