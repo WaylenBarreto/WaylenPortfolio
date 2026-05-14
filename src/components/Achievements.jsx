@@ -7,30 +7,58 @@ import './Achievements.css';
 const achievementsData = [
     {
         icon: <Trophy size={40} />,
-        title: "Eureka Debate Win",
-        location: "GEC 2025",
-        description: "Secured first place in the highly competitive Eureka debate, demonstrating structured argumentation and public speaking excellence."
+        title: "1st Place - Technix Hackathon",
+        location: "GEC 2026",
+        description: "Secured the top spot at the Technix Hackathon held at Goa College of Engineering, showcasing rapid prototyping and system design."
     },
     {
         icon: <Award size={40} />,
-        title: "Pitch Paradox Winner",
-        location: "PCCE Techyons",
-        description: "Won the Pitch Paradox innovation challenge, pitching a unique and complex technological solution effectively under pressure."
+        title: "1st Place - AI Track",
+        location: "BITS Hyderabad",
+        description: "Winner of the AI track at BITS Pilani Hyderabad, developing cutting-edge artificial intelligence solutions."
+    },
+    {
+        icon: <Trophy size={40} />,
+        title: "2nd Place - Odyssey National Hackathon",
+        location: "PCCE 2026",
+        description: "Podium finish at the Odyssey National Level Hackathon, competing against top teams across the country."
     },
     {
         icon: <Star size={40} />,
+        title: "2nd Place - Quantexera YBIT Hackathon",
+        location: "Sawantwadi",
+        description: "Recognized for excellence in full-stack development and problem-solving at the YBIT Hackathon."
+    },
+    {
+        icon: <Award size={40} />,
+        title: "1st Place - Goalpreuners Pitch it",
+        location: "GEC",
+        description: "First place in the Pitch it event, demonstrating strong entrepreneurial vision and communication skills."
+    },
+    {
+        icon: <Trophy size={40} />,
+        title: "2nd Place - AIEM Techurja",
+        location: "Pitching Event",
+        description: "Podium finish at the AIEM Techurja pitching competition, presenting technical innovations to a panel of experts."
+    },
+    {
+        icon: <Trophy size={40} />,
         title: "3rd Place - Ideas 4.0",
-        location: "2026 Innovation Summit",
+        location: "Innovation Summit",
         description: "Awarded for Trustbus: A Privacy-first AI designed to build ultra-reliable transport solutions."
     }
 ];
 
 const galleryImages = [
+    "/images/technix_win.jpg",
+    "/images/odyssey_win.jpg",
+    "/images/bits_hyderabad_win.jpg",
+    "/images/quantexera_win.jpg",
+    "/images/aiem_techurja_win.jpg",
+    "/images/pitching_moment.jpg",
+    "/images/technix_certificates.jpg",
     "/images/media__1772960551925.jpg",
-    "/images/media__1772960914420.jpg",
-    "/images/media__1772960914518.jpg",
-    "/images/media__1772960914571.jpg",
-    "/images/media__1772960914587.jpg"
+    "/images/media__1772960914420.jpg"
 ];
 
 const Achievements = () => {
@@ -48,8 +76,13 @@ const Achievements = () => {
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
                 >
+                    <div className="achievement-stats">
+                        <span className="stat-item">3x Hackathon Winner</span>
+                        <span className="stat-divider">|</span>
+                        <span className="stat-item">4x Ideathon Winner</span>
+                    </div>
                     <h2 className="section-title">Podium <span className="text-accent">Finishes</span></h2>
-                    <p className="section-subtitle">A track record of high-stakes victories.</p>
+                    <p className="section-subtitle">A track record of high-stakes victories in Hackathons, Ideathons, and Pitching competitions.</p>
                 </motion.div>
 
                 <div className="achievements-grid">
@@ -59,7 +92,7 @@ const Achievements = () => {
                             className="achievement-card"
                             initial={{ opacity: 0, y: 30 }}
                             animate={inView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
                             <div className="achievement-icon">{item.icon}</div>
                             <div className="achievement-content">
@@ -77,7 +110,7 @@ const Achievements = () => {
                     className="gallery-container"
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.8 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
                 >
                     <h3 className="gallery-title">Moments of Victory</h3>
                     <div className="gallery-grid">

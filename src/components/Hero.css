@@ -52,6 +52,24 @@
     background-color: var(--accent-red);
 }
 
+.hero-badges {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    background: var(--accent-red);
+    color: var(--text-main);
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    text-transform: uppercase;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    letter-spacing: 1px;
+}
+
 .hero-title {
     font-size: clamp(4rem, 8vw, 7rem);
     line-height: 0.9;

@@ -19,14 +19,18 @@ const Hero = () => {
                         <span className="line"></span>
                         PORTFOLIO 2026
                     </div>
+                    <div className="hero-badges">
+                        <span className="badge">3x Hackathon Winner</span>
+                        <span className="badge">4x Ideathon Winner</span>
+                    </div>
                     <h1 className="hero-title">
                         <span className="text-light">WAYLEN</span><br />
                         <span className="text-bold">BARRETO</span>
                     </h1>
                     <p className="hero-subtitle">
-                        Full-Stack Developer | AI Enthusiast | AI Developer | IoT Builder | Engineering Student
+                        Full-Stack Developer | AI Specialist | IoT Builder | Engineering Student
                         <br />
-                        Building solutions for real-world problems.
+                        Turning complex problems into high-performance solutions.
                     </p>
 
                     <div className="hero-actions">

@@ -13,17 +13,17 @@ const projectsList = [
         links: { github: 'https://github.com/WaylenBarreto' }
     },
     {
-        title: 'RideShield',
-        subtitle: 'AI Traffic Violation Detection',
-        description: 'A MERN stack application featuring real-time camera detection for helmet and phone usage violations, complete with an analytics dashboard and user query portal.',
-        tech: ['MERN Stack', 'Computer Vision', 'Tailwind'],
+        title: 'Inflow',
+        subtitle: 'Unified Freelance Payment Dashboard',
+        description: 'A comprehensive platform for freelancers to streamline client payments. Features automated payment links sent via SMS and email, ensuring smooth transactions for both parties.',
+        tech: ['Flutter', 'Firebase', 'TypeScript', 'Node.js', 'Express'],
         links: { github: 'https://github.com/WaylenBarreto' }
     },
     {
-        title: 'Resolve360',
-        subtitle: 'Unified Customer Complaint Dashboard',
-        description: 'Comprehensive communication platform leveraging AI for complaint storm detection, root cause clustering, and copilot-assisted complaint resolution.',
-        tech: ['MongoDB', 'Express', 'React', 'Node.js', 'AI API'],
+        title: 'Meeting Architect',
+        subtitle: 'AI Meeting Intelligence & Summarization',
+        description: 'A workflow automation tool that processes meeting videos, links, and audio transcripts. Delivers concise AI-generated summaries and actionable insights directly via WhatsApp and Email.',
+        tech: ['TypeScript', 'Python', 'Streamlit', 'AI APIs'],
         links: { github: 'https://github.com/WaylenBarreto' }
     }
 ];
