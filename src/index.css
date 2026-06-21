@@ -8,6 +8,8 @@
   --accent-red: #D51A1A; /* Racing Red */
   --accent-red-hover: #b31010;
   --accent-blue: #0E1A35;
+  --accent-gold: #D4AF37; /* Premium Gold */
+  --accent-gold-gradient: linear-gradient(135deg, #FFE066 0%, #D4AF37 50%, #B3922E 100%);
   --text-main: #FFFFFF;
   --text-muted: #8C8C8C;
   --border-subtle: rgba(255, 255, 255, 0.1);

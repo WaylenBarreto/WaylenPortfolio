@@ -59,7 +59,7 @@
 }
 
 .badge {
-    background: linear-gradient(135deg, #FFE066 0%, #D4AF37 50%, #B3922E 100%);
+    background: var(--accent-gold-gradient);
     color: #000000;
     padding: 0.4rem 1.2rem;
     font-size: 0.8rem;
@@ -179,7 +179,7 @@
     }
 
     .hero-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 0 1.5rem;
         gap: 2.5rem;
         text-align: center;
@@ -220,8 +220,8 @@
         width: 100%;
         max-width: 320px;
         height: 360px;
-        margin-top: 0;
-        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0;
         align-items: flex-end;
     }
 
