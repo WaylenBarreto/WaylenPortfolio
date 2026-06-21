@@ -121,6 +121,9 @@
 }
 
 @media (max-width: 768px) {
+    .project-card {
+        padding: 2rem 1.5rem;
+    }
     .project-title {
         font-size: 2rem;
     }

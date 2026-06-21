@@ -59,15 +59,16 @@
 }
 
 .badge {
-    background: var(--accent-red);
-    color: var(--text-main);
-    padding: 0.4rem 1rem;
+    background: linear-gradient(135deg, #FFE066 0%, #D4AF37 50%, #B3922E 100%);
+    color: #000000;
+    padding: 0.4rem 1.2rem;
     font-size: 0.8rem;
     font-family: var(--font-primary);
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
     clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
     letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
 }
 
 .hero-title {
@@ -171,12 +172,72 @@
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .hero-large-image-wrapper {
-        display: none;
-        /* Hide large image on smaller screens to emphasize text */
+    .hero-section {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+        min-height: auto;
     }
 
     .hero-container {
-        padding: 0 2rem;
+        flex-direction: column-reverse;
+        padding: 0 1.5rem;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-eyebrow {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-badges {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+        max-width: 100%;
+        margin-bottom: 2.5rem;
+        font-size: 1.1rem;
+    }
+
+    .hero-actions {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero-large-image-wrapper {
+        width: 100%;
+        max-width: 320px;
+        height: 360px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        align-items: flex-end;
+    }
+
+    .hero-large-profile {
+        object-position: bottom center;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .racing-stripe.primary {
+        right: 25%;
+        width: 80px;
+    }
+
+    .racing-stripe.secondary {
+        right: 50%;
+        width: 30px;
     }
 }

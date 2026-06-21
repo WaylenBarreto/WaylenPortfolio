@@ -1,0 +1,153 @@
+.techstack-section {
+    padding: var(--section-padding);
+    background-color: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.techstack-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techstack-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    padding: 0.5rem;
+    background: var(--bg-layer);
+    border-radius: 50px;
+    border: 1px solid var(--border-subtle);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-btn {
+    position: relative;
+    padding: 0.75rem 1.75rem;
+    background: transparent;
+    border: none;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-radius: 40px;
+    transition: color 0.3s ease;
+    outline: none;
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+}
+
+.tab-btn.active {
+    color: var(--text-main);
+}
+
+.active-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--accent-red);
+    border-radius: 40px;
+    z-index: -1;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    box-shadow: 0 4px 15px rgba(213, 26, 26, 0.3);
+}
+
+.techstack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tech-card {
+    background: var(--bg-layer);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.tech-logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-logo svg, 
+.tech-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tech-name {
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Brand colored glows on hover */
+.tech-card:hover {
+    border-color: var(--hover-color);
+    box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5), 0 5px 20px -8px var(--hover-color);
+    transform: translateY(-5px);
+}
+
+.tech-card:hover .tech-logo {
+    transform: scale(1.1);
+}
+
+/* Responsive Grid Tweaks */
+@media (max-width: 768px) {
+    .techstack-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 1rem;
+    }
+
+    .tech-card {
+        padding: 1.5rem 0.5rem;
+        gap: 0.8rem;
+    }
+
+    .tech-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .tech-name {
+        font-size: 0.8rem;
+    }
+
+    .tab-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}

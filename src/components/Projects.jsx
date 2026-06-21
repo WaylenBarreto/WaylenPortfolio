@@ -10,21 +10,21 @@ const projectsList = [
         subtitle: 'Privacy-First AI Transport Solutions',
         description: 'An innovative AI system designed to ensure completely reliable transport solutions while prioritizing user privacy. Secured 3rd place in Ideas 4.0 2026.',
         tech: ['React', 'Python', 'AI/ML', 'Node.js'],
-        links: { github: 'https://github.com/WaylenBarreto' }
+        links: { github: 'https://github.com/WaylenBarreto/Trust-Bus' }
     },
     {
         title: 'Inflow',
         subtitle: 'Unified Freelance Payment Dashboard',
         description: 'A comprehensive platform for freelancers to streamline client payments. Features automated payment links sent via SMS and email, ensuring smooth transactions for both parties.',
         tech: ['Flutter', 'Firebase', 'TypeScript', 'Node.js', 'Express'],
-        links: { github: 'https://github.com/WaylenBarreto' }
+        links: { github: 'https://github.com/WaylenBarreto/inflow-dashboard' }
     },
     {
         title: 'Meeting Architect',
         subtitle: 'AI Meeting Intelligence & Summarization',
         description: 'A workflow automation tool that processes meeting videos, links, and audio transcripts. Delivers concise AI-generated summaries and actionable insights directly via WhatsApp and Email.',
         tech: ['TypeScript', 'Python', 'Streamlit', 'AI APIs'],
-        links: { github: 'https://github.com/WaylenBarreto' }
+        links: { github: 'https://github.com/WaylenBarreto/role-aware-virtual-meeting-intelligence-system' }
     }
 ];
 

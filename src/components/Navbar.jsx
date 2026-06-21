@@ -6,6 +6,7 @@ import './Navbar.css';
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
+  { name: 'Tech Stack', href: '#tech-stack' },
   { name: 'Achievements', href: '#achievements' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' }
